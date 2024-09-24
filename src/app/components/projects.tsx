@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Image from 'next/image';
+
 const projects = [
     {
         title: 'EduPredScore',
@@ -15,14 +17,13 @@ const projects = [
         githubLink: 'https://github.com/PetrusAriaa/web-margot1',
         deployLink: 'https://mariagoretti-matiasrasul.vercel.app/',
     },
-    {
-        title: 'Project 3',
-        description: 'This is the description for project 3.',
-        thumbnail: 'path_to_thumbnail3.jpg',
-        githubLink: 'https://github.com/username/project3',
-        deployLink: 'https://project3.com',
-    },
-    // Add more projects as needed
+    // {
+    //     title: 'Project 3',
+    //     description: 'This is the description for project 3.',
+    //     thumbnail: 'path_to_thumbnail3.jpg',
+    //     githubLink: 'https://github.com/username/project3',
+    //     deployLink: 'https://project3.com',
+    // },
 ];
 
 const Projects = () => {
@@ -32,10 +33,12 @@ const Projects = () => {
             <div className="projects-grid grid grid-cols-1 md:grid-cols-3 gap-6 p-7">
                 {projects.map((project, index) => (
                     <div key={index} className="border-cyan-500 rounded-lg shadow-lg shadow-cyan-500/50 project-tab border p-4">
-                        <img
+                        <Image
                             src={project.thumbnail}
                             alt={project.title}
-                            className="thumbnail w-full h-40 object-cover rounded"
+                            width={400} 
+                            height={160}
+                            className="thumbnail object-cover rounded"
                         />
                         <div className=''>
                             <h3 className="project-title text-xl font-semibold mt-4 shadow-lg">{project.title}</h3>

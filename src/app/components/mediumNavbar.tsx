@@ -1,4 +1,4 @@
-import {Button, Navbar} from "@nextui-org/react";
+import {Navbar} from "@nextui-org/react";
 import {scroller} from "react-scroll";
 
 const handleScroll = (target: string) => {
@@ -42,14 +42,14 @@ const MediumNavbar = () => {
               Projects
             </button>
           </li>
-          <li>
+          {/* <li>
             <button
               onClick={() => handleScroll("contact-me")}
               className="font-bold hover:text-accent"
             >
               Contact Me
             </button>
-          </li>
+          </li> */}
         </ul>
       </Navbar>
     </>
