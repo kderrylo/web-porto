@@ -29,7 +29,7 @@ const projects = [
 const Projects = () => {
     return (
         <div className="projects-section">
-            <h2 className="text-3xl font-bold text-center my-8">Projects</h2>
+            <h2 className="text-5xl font-bold text-accent text-center my-8">Projects</h2>
             <div className="projects-grid grid grid-cols-1 md:grid-cols-3 gap-6 p-7">
                 {projects.map((project, index) => (
                     <div key={index} className="border-cyan-500 rounded-lg shadow-lg shadow-cyan-500/50 project-tab border p-4">

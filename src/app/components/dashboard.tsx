@@ -35,7 +35,7 @@ export default function Dashboard() {
           zIndex: 1, 
         }}
       />
-      <main className="relative z-10 flex flex-col justify-center ml-20 h-full text-light">
+      <main className="relative z-10 flex flex-col justify-center ml-10 p-5 h-full text-light">
         <div className="flex flex-col ">
           <h1 className="text-xl md:text-3xl lg:text-5xl">Hi there,</h1>
           <h1 className="text-accent font-bold text-3xl md:text-5xl lg:text-7xl mt-2">

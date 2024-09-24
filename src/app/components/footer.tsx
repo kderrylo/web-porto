@@ -9,9 +9,9 @@ export const Footer = () => {
   return (
     <footer
       id="footer"
-      className="pt-16 w-full flex flex-col justify-center items-center bg-myBlack2"
+      className="pt-20 w-full flex flex-col justify-center items-center "
     >
-      <div className="w-4/5 md:max-w-[75rem] flex flex-col gap-8">
+      <div className="w-5/6 md:max-w-[100rem] flex flex-col gap-8">
         <div className="flex flex-col gap-4">
           <h1 className="text-accent font-bold text-5xl md:text-7xl">
             Derryl Odja

@@ -13,9 +13,15 @@ export default function Home() {
     <ParallaxProvider>
       <main className="bg-navbar text-light">
         <Navbar />
-        <Dashboard />
-        <About />
-        <Projects />
+        <div id="dashboard">
+          <Dashboard />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
         <Footer />
       </main>
     </ParallaxProvider>
