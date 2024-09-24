@@ -32,7 +32,7 @@ const MediumNavbar = () => {
     return () => {
       window.removeEventListener("scroll", controlNavbar);
     };
-  }, [lastScrollY]);
+  }, [lastScrollY, controlNavbar]);
 
   return (
     <Navbar
@@ -66,14 +66,6 @@ const MediumNavbar = () => {
             Projects
           </button>
         </li>
-        {/* <li>
-          <button
-            onClick={() => handleScroll("contact-me")}
-            className="font-bold hover:text-accent"
-          >
-            Contact Me
-          </button>
-        </li> */}
       </ul>
     </Navbar>
   );
