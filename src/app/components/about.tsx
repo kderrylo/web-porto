@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-import background from "../../../public/assets/bg-2.webp";
+import background from "../../../public/assets/bg-2.png";
 import Link from "next/link";
 
 export default function About() {
