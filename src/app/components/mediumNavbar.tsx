@@ -2,6 +2,7 @@
 import { Navbar } from "@nextui-org/react";
 import { scroller } from "react-scroll";
 import { useEffect, useState } from "react";
+import { useCallback } from "react";
 
 const handleScroll = (target: string) => {
   scroller.scrollTo(target, {
@@ -16,7 +17,7 @@ const MediumNavbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const controlNavbar = () => {
+  const controlNavbar = useCallback(() => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
         setIsVisible(false);
@@ -25,14 +26,14 @@ const MediumNavbar = () => {
       }
       setLastScrollY(window.scrollY); 
     }
-  };
-
+  }, [lastScrollY]);
+  
   useEffect(() => {
     window.addEventListener("scroll", controlNavbar);
     return () => {
       window.removeEventListener("scroll", controlNavbar);
     };
-  }, [lastScrollY, controlNavbar]);
+  }, [controlNavbar]);
 
   return (
     <Navbar
