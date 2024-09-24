@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Derryl Odja | Data Scientist",
-  description: "Derryl Odja | Data Scientist",
+  description: "Derryl Odja Portfolio Website",
 };
 
 export default function RootLayout({
