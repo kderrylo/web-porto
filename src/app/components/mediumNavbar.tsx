@@ -6,7 +6,7 @@ import { useCallback } from "react";
 
 const handleScroll = (target: string) => {
   scroller.scrollTo(target, {
-    duration: 1500,
+    duration: 1100,
     delay: 100,
     smooth: "easeInOut",
     offset: -110,
