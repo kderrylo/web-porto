@@ -32,17 +32,17 @@ export default function Dashboard() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           opacity: 0.6,
-          zIndex: 1, 
+          zIndex: 1,
         }}
       />
       <main className="relative z-10 flex flex-col justify-center ml-10 p-5 h-full text-light">
         <div className="flex flex-col ">
           <h1 className="text-xl md:text-3xl lg:text-5xl">Hi there,</h1>
           <h1 className="text-accent font-bold text-3xl md:text-5xl lg:text-7xl mt-2">
-            {"I'm Derryl Odja"}
+            I&apos;m Derryl Odja
           </h1>
           <h1 className="text-xl md:text-3xl lg:text-5xl mt-2">
-            <span>and I'm </span>
+            <span>and I&apos;m </span>
             <span ref={typedRef} className="font-bold" />
           </h1>
         </div>
