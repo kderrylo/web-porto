@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Image from 'next/image';
-
 import background from "../../../public/assets/bg-2.png";
 import Link from "next/link";
 
@@ -20,17 +19,16 @@ export default function About() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           opacity: 0.5,
-          zIndex: 1,
         }}
       />
 
-      <main className="relative z-10 flex flex-col justify-center w-full h-full text-light p-10">
-        <div className="flex flex-row w-full">
-          <div className="w-1/2 p-5">
-            <h1 className="text-accent font-bold text-3xl md:text-5xl lg:text-7xl">
+      <main className="relative flex flex-col justify-center w-full h-full text-light p-10 sm:p-[2vh] md:p-[4vh] lg:p-[9vh]"> {/* Increased padding for larger screens */}
+        <div className="flex flex-col md:flex-row w-full mt-16"> 
+          <div className="w-full md:w-1/2">
+            <h1 className="text-accent font-bold text-2xl sm:text-3xl md:text-5xl lg:text-7xl">
               {"About Me"}
             </h1>
-            <p className="mt-4 text-lg lg:text-1xl ">
+            <p className="mt-4 text-1xl lg:text-1xl ">
               <b>Derryl Odja</b> is a Computer Science student from Indonesia. He is passionate about data and artificial intelligence, constantly exploring ways to leverage technology for innovative solutions. With a strong foundation in programming and analytics, he is eager to make an impact in the tech industry.
             </p>
             <Link href="/profile">
@@ -41,9 +39,9 @@ export default function About() {
             </Link>
           </div>
 
-          <div className="w-1/2 p-5" style={{ height: '500px', overflowY: 'auto' }}>
+          <div className="w-full md:w-1/2 p-5" style={{ height: '500px', overflowY: 'auto' }}>
             <div className="mt-6 border-2 border-cyan-500 rounded-lg shadow-lg shadow-cyan-500/50">
-              <div className="flex flex-row space-x-2">
+              <div className="flex flex-row space-x-2 text-[13px] text-bold">
                 <button
                   className={`relative border-cyan-500 rounded-lg shadow-lg shadow-cyan-500/50 flex-1 py-2 px-4 transition duration-300 overflow-hidden rounded-lg ${selectedCategory === 'dataScience' ? 'text-primary font-bold bg-accent' : 'font-bold text-light bg-transparent border-b-2 border-accent'}`}
                   onClick={() => handleSelect('dataScience')}
@@ -60,13 +58,13 @@ export default function About() {
                   <span className={`absolute inset-0 rounded-full transition-transform duration-300 ${selectedCategory === 'webDevelopment' ? 'bg-accent h-full w-full scale-100' : 'bg-accent h-0 w-0 scale-0'} hover:h-full hover:w-full hover:scale-100`} />
                 </button>
               </div>
-              <div className='p-3 '>
+
+              <div className='p-3' >
                 {selectedCategory === 'webDevelopment' && (
                   <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
-                    {/* Skill 1 */}
                     <div className="flex items-center justify-center space-x-4 p-2 rounded-lg shadow-lg bg-orange-700">
                       <Image src="/assets/logo-html.png" alt="Logo 1" width={24} height={24} />
-                      <span className="text-sm font-bold ">HTML</span>
+                      <span className="font-bold text-[15px]">HTML</span>
                     </div>
 
                     {/* Skill 2 */}
@@ -136,15 +134,14 @@ export default function About() {
                       <Image src="/assets/logo-sqlite.png" alt="Logo 19" width={24} height={24} />
                       <span className="text-sm text-black font-bold">SQLite</span>
                     </div>
-
-
-
+                    {/* Add your skill items here... */}
                   </div>
-
                 )}
 
                 {selectedCategory === 'dataScience' && (
                   <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+                    {/* Skills for AI/Data Science */}
+
                     {/* Skill 1 */}
                     <div className="flex items-center justify-center space-x-4 p-2 rounded-lg shadow-lg bg-blue-900">
                       <Image src="/assets/logo-python2.png" alt="Logo 1" width={24} height={24} />
@@ -212,12 +209,8 @@ export default function About() {
                       <Image src="/assets/logo-librosa.png" alt="Logo 19" width={24} height={24} />
                       <span className="text-sm text-black font-bold">Librosa</span>
                     </div>
-
-
-
-
+                    {/* Add your skill items here... */}
                   </div>
-
                 )}
               </div>
             </div>
