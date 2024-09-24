@@ -23,7 +23,7 @@ export default function About() {
       />
 
       <main className="relative flex flex-col justify-center w-full h-full text-light p-10 sm:p-[2vh] md:p-[4vh] lg:p-[9vh]"> {/* Increased padding for larger screens */}
-        <div className="flex flex-col md:flex-row w-full mt-16"> 
+        <div className="flex flex-col md:flex-row w-full mt-16 gap-10"> 
           <div className="w-full md:w-1/2">
             <h1 className="text-accent font-bold text-2xl sm:text-3xl md:text-5xl lg:text-7xl">
               {"About Me"}
@@ -39,7 +39,7 @@ export default function About() {
             </Link>
           </div>
 
-          <div className="w-full md:w-1/2 p-5" style={{ height: '500px', overflowY: 'auto' }}>
+          <div className="w-full md:w-1/2" style={{ height: '500px', overflowY: 'auto' }}>
             <div className="mt-6 border-2 border-cyan-500 rounded-lg shadow-lg shadow-cyan-500/50">
               <div className="flex flex-row space-x-2 text-[13px] text-bold">
                 <button
@@ -59,7 +59,7 @@ export default function About() {
                 </button>
               </div>
 
-              <div className='p-3' >
+              <div className='p-4' >
                 {selectedCategory === 'webDevelopment' && (
                   <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
                     <div className="flex items-center justify-center space-x-4 p-2 rounded-lg shadow-lg bg-orange-700">
