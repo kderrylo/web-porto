@@ -46,7 +46,7 @@ export default function About() {
                   className={`relative border-cyan-500 rounded-lg shadow-lg shadow-cyan-500/50 flex-1 py-2 px-4 transition duration-300 overflow-hidden rounded-lg ${selectedCategory === 'dataScience' ? 'text-primary font-bold bg-accent' : 'font-bold text-light bg-transparent border-b-2 border-accent'}`}
                   onClick={() => handleSelect('dataScience')}
                 >
-                  <span className="relative z-10">AI/Data Science Skill</span>
+                  <span className="relative z-10">ML/DL Skills</span>
                   <span className={`absolute inset-0 rounded-full transition-transform duration-300 ${selectedCategory === 'dataScience' ? 'bg-accent h-full w-full scale-100' : 'bg-accent h-0 w-0 scale-0'} hover:h-full hover:w-full hover:scale-100`} />
                 </button>
 
@@ -54,7 +54,7 @@ export default function About() {
                   className={`relative border-cyan-500 rounded-lg shadow-lg shadow-cyan-500/50 flex-1 py-2 px-4 transition duration-300 overflow-hidden rounded-lg ${selectedCategory === 'webDevelopment' ? 'text-primary font-bold bg-accent' : 'font-bold text-light bg-transparent border-b-2 border-accent'}`}
                   onClick={() => handleSelect('webDevelopment')}
                 >
-                  <span className="relative z-10">Web/App Development Skill</span>
+                  <span className="relative z-10">Web/App Development Skills</span>
                   <span className={`absolute inset-0 rounded-full transition-transform duration-300 ${selectedCategory === 'webDevelopment' ? 'bg-accent h-full w-full scale-100' : 'bg-accent h-0 w-0 scale-0'} hover:h-full hover:w-full hover:scale-100`} />
                 </button>
               </div>

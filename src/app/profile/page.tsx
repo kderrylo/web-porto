@@ -29,7 +29,7 @@ export default function profile() {
                                 Kasimirus Derryl Odja
                             </h1>
                             <h2 className="text-light font-semibold text-lg md:text-2xl lg:text-3xl">
-                                Data Scientist
+                                AI/ML Engineer
                             </h2>
                         </div>
                         <div className="relative">

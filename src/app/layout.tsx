@@ -8,7 +8,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Derryl Odja | Data Scientist",
+  title: "Derryl Odja | AI/ML Engineer",
   description: "Derryl Odja Portfolio Website",
 };
 
