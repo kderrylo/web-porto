@@ -17,13 +17,13 @@ const projects = [
         githubLink: 'https://github.com/PetrusAriaa/web-margot1',
         deployLink: 'https://mariagoretti-matiasrasul.vercel.app/',
     },
-    // {
-    //     title: 'Project 3',
-    //     description: 'This is the description for project 3.',
-    //     thumbnail: 'path_to_thumbnail3.jpg',
-    //     githubLink: 'https://github.com/username/project3',
-    //     deployLink: 'https://project3.com',
-    // },
+    {
+        title: 'NLP Project - Mental Illness Detection with Sentiment Analysis',
+        description: 'NLP project demo focusing on classifying five key categories: addiction, anxiety, autism, depression, and schizophrenia. I employed a comparative approach, evaluating the effectiveness of various Machine Learing and Deep Learning models.',
+        thumbnail: '/project-img/THUMB_nlp-project.png',
+        githubLink: 'https://github.com/kderrylo/Mental-Illness-Detection-LiveDemo',
+        deployLink: 'https://mental-illness-detection-nlp.streamlit.app/',
+    },
 ];
 
 const Projects = () => {
