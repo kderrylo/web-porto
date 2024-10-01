@@ -57,7 +57,7 @@ export default function profile() {
 
                         I&apos;m especially interested in learning more about NLP and Speech Recognition, and I love experimenting with personal projects in these fields.{" "}          
                         I’m also learning <span className="text-accent">Next.js</span> to strengthen my front-end skills, and I&apos;ve taken some courses on Computer Vision.{" "}  
-                        One of my recent projects was writing a paper titled &quot;Detecting Mental Illness with Sentiment Analysis on Social Media&quot;, which I had the opportunity to present at <span className="text-accent">ICCSCI 2024</span>.{" "}
+                        One of my recent projects was writing a paper titled &quot;Detecting Mental Illness with Sentiment Analysis on Social Media&quot;, which I had the opportunity to present at <span className="text-accent">9th International Conference on Computer Science and Computational Intelligence 2024</span>.{" "}
                         <br />
                         <br />
                         I see myself as a lifelong learner who enjoys working with others, and I thrive in <span className="text-accent">teamwork</span> environments. I’m also comfortable with <span className="text-accent">public speaking</span>, and I’m always on the lookout for opportunities to grow and make a meaningful impact in the field of data science.
