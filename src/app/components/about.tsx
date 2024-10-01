@@ -111,6 +111,8 @@ export default function About() {
                       <span className="text-sm text-black font-bold">Keras</span>
                     </div>
 
+                    
+
                     {/* Skill 9 */}
                     <div className="flex items-center justify-center space-x-4 p-2 rounded-lg shadow-lg bg-yellow-600">
                       <Image src="/assets/logo-opencv.png" alt="Logo 9" width={24} height={24} />
@@ -130,7 +132,12 @@ export default function About() {
                       <Image src="/assets/logo-librosa.png" alt="Logo 19" width={24} height={24} />
                       <span className="text-sm text-black font-bold">Librosa</span>
                     </div>
-                    {/* Add your skill items here... */}
+                    
+                    {/* Skill 8 */}
+                    <div className="flex items-center justify-center space-x-4 p-2 rounded-lg shadow-lg bg-light">
+                      <Image src="/assets/logo-streamlit.png" alt="Logo 8" width={24} height={24} />
+                      <span className="text-sm text-black font-bold">Streamlit</span>
+                    </div>
                   </div>
                 )}
 
@@ -192,10 +199,10 @@ export default function About() {
 
 
                     {/* Skill 10 */}
-                    <div className="flex items-center justify-center space-x-4 p-2 rounded-lg shadow-lg bg-light">
+                    {/* <div className="flex items-center justify-center space-x-4 p-2 rounded-lg shadow-lg bg-light">
                       <Image src="/assets/logo-flask.png" alt="Logo 9" width={24} height={24} />
                       <span className="text-sm text-black font-bold">Flask</span>
-                    </div>
+                    </div> */}
 
                     {/* Skill 11 */}
                     <div className="flex items-center justify-center space-x-4 p-2 rounded-lg shadow-lg bg-cyan-200">
