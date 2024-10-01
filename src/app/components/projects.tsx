@@ -5,7 +5,7 @@ import Image from 'next/image';
 const projects = [
     {
         title: 'EduPredScore',
-        description: 'A simple Machine Learning application that can predict student scores based on several correlated features.',
+        description: 'A simple Machine Learning application that can predict student scores based on several interrelated features. Through the application of regression concepts in machine learning, we aims to provide users with predictions and insights regarding their educational performance.',
         thumbnail: '/project-img/THUMB_edu-pred-score.png',
         githubLink: 'https://github.com/kderrylo/EduPredScore',
         deployLink: 'https://ml-project-student-performance.streamlit.app/',
@@ -19,10 +19,16 @@ const projects = [
     },
     {
         title: 'NLP Project - Mental Illness Detection with Sentiment Analysis',
-        description: 'NLP project demo focusing on classifying five key categories: addiction, anxiety, autism, depression, and schizophrenia. I employed a comparative approach, evaluating the effectiveness of various Machine Learing and Deep Learning models.',
+        description: 'Focusing on classifying five key categories: addiction, anxiety, autism, depression, and schizophrenia. I employed a comparative approach, evaluating the effectiveness of various Machine Learing and Deep Learning models.',
         thumbnail: '/project-img/THUMB_nlp-project.png',
         githubLink: 'https://github.com/kderrylo/Mental-Illness-Detection-LiveDemo',
         deployLink: 'https://mental-illness-detection-nlp.streamlit.app/',
+    },
+    {
+        title: 'Speech Emotion Classification with CNN-LSTM-CLSTM from CREMA-D',
+        description: 'Building a CNN, LSTM, CLSTM models to classify 5 categories emotions (angry, disgust, fear, happy, neutral) from CREMA-D .WAV files using feature extraction techniques like MFCC and data augmentation, along with training and evaluating the models on the processed dataset.',
+        thumbnail: '/project-img/THUMB_SR-project.jpg',
+        githubLink: 'https://github.com/kderrylo/Speech-Emotion-Classification-with-CNN-LSTM-CLSTM/tree/master',
     },
 ];
 
@@ -36,7 +42,7 @@ const Projects = () => {
                         <Image
                             src={project.thumbnail}
                             alt={project.title}
-                            width={400} 
+                            width={400}
                             height={160}
                             className="thumbnail object-cover rounded"
                         />
@@ -52,14 +58,16 @@ const Projects = () => {
                                 >
                                     GitHub
                                 </a>
-                                <a
-                                    href={project.deployLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="deploy-link text-blue-500 hover:underline"
-                                >
-                                    Live Demo
-                                </a>
+                                {project.deployLink && (
+                                    <a
+                                        href={project.deployLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="deploy-link text-blue-500 hover:underline"
+                                    >
+                                        Live Demo
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>
