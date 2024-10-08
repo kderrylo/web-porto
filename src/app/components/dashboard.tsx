@@ -6,7 +6,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     const options = {
-      strings: ["an AI Engineer", "a ML Engineer", "a Data Scientist"],
+      strings: ["a Data Scientist","a ML Engineer", "an AI Engineer" ],
       typeSpeed: 100,
       backSpeed: 50,
       backDelay: 1000,
