@@ -22,7 +22,7 @@ export default function About() {
         }}
       />
 
-      <main className="relative flex flex-col justify-center w-full h-full text-light p-10 sm:p-[2vh] md:p-[4vh] lg:p-[9vh]"> {/* Increased padding for larger screens */}
+      <main className="relative flex flex-col justify-center w-full h-full text-light p-10 sm:p-[2vh] md:p-[4vh] lg:p-[9vh]"> 
         <div className="flex flex-col md:flex-row w-full mt-16 gap-10"> 
           <div className="w-full md:w-1/2">
             <h1 className="text-accent font-bold text-2xl sm:text-3xl md:text-5xl lg:text-7xl">
@@ -144,6 +144,12 @@ export default function About() {
                       <Image src="/assets/logo-tableau.png" alt="Logo 8" width={30} height={30} />
                       <span className="text-sm text-black font-bold">Tableau</span>
                     </div>
+                    
+                    <div className="flex items-center justify-center space-x-4 p-2 rounded-lg shadow-lg bg-light">
+                      <Image src="/assets/logo-pytorch.png" alt="Logo 8" width={30} height={30} />
+                      <span className="text-sm text-black font-bold">PyTorch</span>
+                    </div>
+
                   </div>
                 )}
 
