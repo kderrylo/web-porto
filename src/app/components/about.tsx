@@ -141,12 +141,12 @@ export default function About() {
 
                     {/* Skill 8 */}
                     <div className="flex items-center justify-center space-x-4 p-2 rounded-lg shadow-lg bg-light">
-                      <Image src="/assets/logo-tableau.png" alt="Logo 8" width={30} height={30} />
+                      <Image src="/assets/logo-tableau.png" alt="Logo 8" width={24} height={24} />
                       <span className="text-sm text-black font-bold">Tableau</span>
                     </div>
                     
                     <div className="flex items-center justify-center space-x-4 p-2 rounded-lg shadow-lg bg-light">
-                      <Image src="/assets/logo-pytorch.png" alt="Logo 8" width={30} height={30} />
+                      <Image src="/assets/logo-pytorch.png" alt="Logo 8" width={24} height={24} />
                       <span className="text-sm text-black font-bold">PyTorch</span>
                     </div>
 
