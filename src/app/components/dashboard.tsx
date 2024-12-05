@@ -43,7 +43,7 @@ export default function Dashboard() {
             <span>and I&apos;m </span>
             <span ref={typedRef} className="font-bold" />
           </h1>
-          <a href="/CV_Kasimirus_Derryl_Odja.pdf" download="CV Kasimirus Derryl Odja.pdf" className="w-28 sm:w-28 md:w-60 lg:w-72">
+          <a href="/CV Kasimirus Derryl Odja.pdf" download="CV Kasimirus Derryl Odja.pdf" className="w-28 sm:w-28 md:w-60 lg:w-72">
             <button className="bg-primary mt-4 text-accent border border-accent border-b-4 sm:w-28 md:w-60 lg:w-72 shadow-lg shadow-cyan-500/50 text-xs sm:text-sm md:text-base lg:text-lg font-medium overflow-hidden px-3 sm:px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
               Download CV
             </button>
